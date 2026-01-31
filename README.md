@@ -1,6 +1,6 @@
 # Setting up HorizonXI on Valve's Steam Deck
 
-These instructions and script install version 1.3.2-hotfix1 of the [launcher](https://github.com/HorizonFFXI/HorizonXI-Launcher-Binaries/releases).
+These instructions and script install version 1.9.1 of the [launcher](https://github.com/HorizonFFXI/HorizonXI-Launcher-Binaries/releases).
 
 This script will automatically setup the Windows install path to be `C:\Program Files (x86)` inside the prefix. I will also turn on several add-ons that I use and set the resolution to 720p and rendering resolution to 1440p. I am doing using this resolution instead of 800p so that when I dock to a 16x9 screen, it doesn't stretch. Feel free to change it to 800p/1600p in the launcher.
 
@@ -13,7 +13,7 @@ This script will automatically setup the Windows install path to be `C:\Program 
 
 ## Setup
 
-1. On Desktop mode, download the [horizonxi-setup.sh](./horizonxi-setup.sh) file, change the permission property to **execute**, right-click the file and click **Run In Konsole**. It will automatically download the launcher and setup the ~/Games/HorizonXI folders.
+1. On Desktop mode, go to [horizonxi-setup.sh](./horizonxi-setup.sh) page and download the file by clicking `Download raw file`, change the permission property to **execute**, right-click the file and click **Run In Konsole**. It will automatically download the launcher and setup the ~/Games/HorizonXI folders.
 
 1. Download proton version **GE-Proton7-42** from *ProtonUp-Qt*. It may require restarting Steam for the new proton version to be detected by Steam.
 
