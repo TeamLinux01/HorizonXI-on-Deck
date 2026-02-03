@@ -4,6 +4,10 @@ These instructions and script install version 1.9.2 of the [launcher](https://gi
 
 This script will automatically setup the Windows install path to be `C:\Program Files (x86)` inside the prefix. I will also turn on several add-ons that I use and set the resolution to 720p and rendering resolution to 1440p. I am doing using this resolution instead of 800p so that when I dock to a 16x9 screen, it doesn't stretch. Feel free to change it to 800p/1600p in the launcher.
 
+Also added the D3D8 to D3D9 proxy by atom0s,
+Final Fantasy XI - Direct3D8 to Direct3D9 Proxy
+(c) 2018 Ashita Development Team
+
 ## Prerequisites
 
 * [Register a HorizonXI account](https://horizonxi.com/register)
@@ -27,7 +31,7 @@ This script will automatically setup the Windows install path to be `C:\Program 
 
     1. Add
        ```
-       STEAM_COMPAT_DATA_PATH="$HOME"/Games/HorizonXI/Prefix/ %command%
+       STEAM_COMPAT_DATA_PATH="$HOME"/Games/HorizonXI/Prefix/ WINEDLLOVERRIDES="d3d8=n,b" DXVK_FRAME_RATE=60 %command%
        ```
        to the *LAUNCH OPTIONS*
 
