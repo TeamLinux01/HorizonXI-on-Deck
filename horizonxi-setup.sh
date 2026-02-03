@@ -27,14 +27,14 @@ if [ ! -d "$HOME/Games/HorizonXI/Prefix/pfx" ]; then
 fi
 if [ ! -d "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader" ]; then
   mkdir -p "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader"
-  pushd "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader" || exit 1
-  if [ ! -f "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader/d3d8.ini" ]; then
-    wget "https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/Program%20Files%20(x86)/HorizonXI/Game/bootloader/d3d8.ini"
-  fi
-  if [ ! -f "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader/d3d8.dll" ]; then
-    wget "https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/Program%20Files%20(x86)/HorizonXI/Game/bootloader/d3d8.dll"
-  fi
-  popd || exit 1
 fi
+pushd "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader" || exit 1
+if [ ! -f "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader/d3d8.ini" ]; then
+  wget "https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/Program%20Files%20(x86)/HorizonXI/Game/bootloader/d3d8.ini"
+fi
+if [ ! -f "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader/d3d8.dll" ]; then
+  wget "https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/Program%20Files%20(x86)/HorizonXI/Game/bootloader/d3d8.dll"
+fi
+popd || exit 1
 echo "Copying install files completed. It is safe to close the terminal."
 exit 0
