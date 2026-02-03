@@ -13,9 +13,12 @@ This script will automatically setup the Windows install path to be `C:\Program 
 
 ## Setup
 
-1. On Desktop mode, go to [horizonxi-setup.sh](./horizonxi-setup.sh) page and download the file by clicking `Download raw file`, change the permission property to **execute**, right-click the file and click **Run In Konsole**. It will automatically download the launcher and setup the ~/Games/HorizonXI folders.
+1. On Desktop mode, open terminal and run
+   ```
+   wget https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/refs/heads/main/horizonxi-setup.sh -O ~/Downloads/horizonxi-setup.sh;chmod +x ~/Downloads/horizonxi-setup.sh;sh ~/Downloaads/horizonxi-setup.sh
+   ```
 
-1. Download proton version **GE-Proton7-42** from *ProtonUp-Qt*. It may require restarting Steam for the new proton version to be detected by Steam.
+1. Download proton version **GE-Proton7-42** from *ProtonUp-Qt* or *ProtonPlus*. It may require restarting Steam for the new proton version to be detected by Steam.
 
 1. Open Steam and click the **Add a Game** button on the bottom-left of Steam's desktop interface. Click **Add a Non-Steam Game...**, click **Browse...* button on the window that popped-up, navigate to *Home/Games/HorizonXI/Launcher/* and click **HorizonXI-Launcher.exe** and then click the **Open** button. Click the blue **Add Selected Programs** button.
 
