@@ -15,7 +15,7 @@ This script will automatically setup the Windows install path to be `C:\Program 
 
 1. On Desktop mode, open terminal and run
    ```
-   wget https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/refs/heads/main/horizonxi-setup.sh -O ~/Downloads/horizonxi-setup.sh;chmod +x ~/Downloads/horizonxi-setup.sh;sh ~/Downloaads/horizonxi-setup.sh
+   wget https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/refs/heads/main/horizonxi-setup.sh -O ~/Downloads/horizonxi-setup.sh;chmod +x ~/Downloads/horizonxi-setup.sh;sh ~/Downloads/horizonxi-setup.sh
    ```
 
 1. Download proton version **GE-Proton7-42** from *ProtonUp-Qt* or *ProtonPlus*. It may require restarting Steam for the new proton version to be detected by Steam.
