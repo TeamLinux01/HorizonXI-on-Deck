@@ -13,7 +13,14 @@ wget -c https://github.com/HorizonFFXI/HorizonXI-Launcher-Binaries/releases/down
 mv lib/net45/* "$HOME/Games/HorizonXI/Launcher/"
 popd || exit 1
 if [ ! -d "$HOME/Games/HorizonXI/Prefix/pfx" ]; then
-  mkdir -p "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI"
+  mkdir -p "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader"
+  pushd "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader" || exit 1
+  if [ ! -f "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader/d3d8.ini" ]; then
+    wget https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/Program%20Files%20(x86)/Game/bootloader/d3d8.ini
+  fi
+  if [ ! -f "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader/d3d8.dll" ]; then
+    wget https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/Program%20Files%20(x86)/Game/bootloader/d3d8.dll
+  fi
   ln -s "$HOME/Games/HorizonXI/Downloads" "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Downloads"
   mkdir -p "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/users/steamuser/AppData/Roaming/HorizonXI-Launcher"
   pushd "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/users/steamuser/AppData/Roaming/HorizonXI-Launcher" || exit 1

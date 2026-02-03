@@ -1,0 +1,264 @@
+====================================================================================================
+
+Final Fantasy XI - Direct3D8 to Direct3D9 Proxy
+(c) 2018 Ashita Development Team
+
+====================================================================================================
+
+..::[ Project Links ]::..
+
+    Homepage : https://forums.ashitaxi.com/
+    Forums   : https://forums.ashitaxi.com/viewforum.php?f=25
+    
+    Please direct all questions, comments, suggestions and feedback to the proper location on
+    the forums linked above. There will be a section detected to this project.
+
+----------------------------------------------------------------------------------------------------
+
+..::[ Donations ]::..
+
+----------------------------------------------------------------------------------------------------
+
+    Donations are appreciated, no matter the amount. It helps keep me motivated to work on things
+    for the community. Want to say thanks? Enjoy my work? Why not donate!
+
+    I accept donations through Paypal. You can donate, even without an account, by using this link:
+    https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7U7Q2GRT6KUJN
+    
+----------------------------------------------------------------------------------------------------
+
+..::[ Purpose of Usage ]::..
+
+    The general purpose of this project is to allow systems that have hardware limitations to make
+    Final Fantasy XI to run under Direct3D9 rather than Direct3D8. Laptop users of newer hardware
+    are well aware of issues due to Nvidias Optimus or AMD Switchable Graphics technologies not
+    properly handling older games such as FFXI which make use of D3D8. Combine this problem with
+    newer software such as Windows 10, users suffer incredibly horrible performance and framerates
+    in-game making it virtually impossible to play the game under these conditions.
+    
+    This project was initially created by me, atom0s, for personal purposes because my new laptop
+    has Windows 10 and a Nvidia GTX1060 and cannot run FFXI properly. Instead, the Direct3D8 API
+    is CPU emulated, incorrectly, and thus generates a horrible playing experience. A high-end
+    laptop with the latest hardware running FFXI at 5-10fps and huge input lag is just a big
+    disappointment because of these forced technologies that we have no control over.
+    
+    I, atom0s, initially started this project years ago when SE first failed to deliver on their
+    promise of bring the game up to Direct3D9 back before Treasures of Aht Urhgan was released. I
+    wanted to build a wrapper/proxy that would accomplish this but could never get it fully working.
+    
+    Thanks to more recent discoveries, public shared source and more people being involved in Direct3D
+    programming, the information was now readibly available to finish this project and bring my various
+    code bases from past projects into one and create this project.
+    
+    tldr; This projects purpose is to help those who have issues running FFXI due to issues with hardware
+    limitations such as Nvidia Optimus or AMD Switchable Graphics.
+    
+----------------------------------------------------------------------------------------------------
+
+..::[ Requirements ]::..
+
+    The only requirements that should be needed on your system for this to work are the following:
+
+        - DirectX 9.0c End-User Runtime:
+            https://www.microsoft.com/en-us/download/details.aspx?id=34429
+            
+            Please note! If you are using Windows 10, the above download may not work on your system.
+            If that is the case, then you will need to use the following download instead:
+            https://www.microsoft.com/en-us/download/details.aspx?id=35
+            
+        - Visual C++ Redist. 2017:
+            https://aka.ms/vs/15/release/VC_redist.x86.exe
+
+            Please note! You must install the 32bit version of this package for this to work.
+            Installing the 64bit file will not make this work!
+
+----------------------------------------------------------------------------------------------------
+
+..::[ How To Use / Installation ]::..
+
+
+    This project is compatible with:
+        - Stock Retail Client
+        - Ashita    (Recommended)
+        - Windower  (No support given if used.)
+        - Custom boot loaders, such as the one coded by atom0s for use with private servers. (ffxi-bootmod/xiboot etc.)
+
+    This project will work both on the retail servers as well as private servers. However, there are
+    different installation steps needed depending on which you play on.
+    
+    ::[ Retail Installation Steps ]::
+    
+        To use this project on retail, you must extract the d3d8.dll and d3d8.ini files into the main
+        PlayOnline installation folder. This folder is where you will find 'pol.exe'.
+        
+        ie. C:\Program Files (x86)\PlayOnline\SquareEnix\PlayOnlineViewer\
+        
+        Both files should be copied into this folder.
+        
+        
+    ::[ Private Server Installation Steps ]::
+    
+        To use this project on a private server, you must extract the d3d8.dll and d3d8.ini files into
+        the custom private server boot loader folder that comes with Ashita. 
+        
+        ie. C:\Ashita\ffxi-bootmod\
+        
+        Both files should be copied into this folder.
+
+        (For Windower, follow the same steps but place the files where ever you have the boot loader at.)
+        
+        If your private server requires that you use a custom boot loader in a different location, then
+        you will need to copy the two files (d3d8.dll, d3d8.ini) into the folder with their custom loader
+        instead. 
+        
+    Once installed to the proper location, you can open up the d3d8.ini file and adjust the
+    configurations as needed. The ini file is well documented with reference links to information
+    that explains things it much better detail straight from Microsoft for non-expert users. It is
+    important to note that invalid settings within the ini file can cause the game to crash. Crashes
+    can lead to settings/configurations becoming corrupted or lost. Please only edit the d3d8.ini file
+    if you know what you are doing and understand these risks!
+    
+----------------------------------------------------------------------------------------------------
+
+..::[ Included Files ]::..
+
+    The following files are included with this project:
+    
+        - d3d8.dll      - The main project file that makes this work.
+        - d3d8.ini      - The project configuration file to alter settings used by the project.
+        - Read Me.txt   - This read me file.
+        
+----------------------------------------------------------------------------------------------------
+
+..::[ Credits / Copyright(s) ]::..
+
+    This project was created by atom0s of the Ashita Development Team.
+    
+    
+    Shader Rewriting (Pixel Shader / Vertex Shader)
+    ------------------------------------------------------------------------------------------------
+    Copyright (C) 2015 Patrick Mours. All rights reserved.
+    
+    https://github.com/crosire/d3d8to9
+
+    Redistribution and use in source and binary forms, with or without modification, are permitted provided 
+    that the following conditions are met:
+
+    Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+    Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer 
+    in the documentation and/or other materials provided with the distribution.
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
+    BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+    SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+    INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+    OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    
+----------------------------------------------------------------------------------------------------
+
+..::[ Testing / Benchmarking ]::..
+
+    The starting projects that this was built upon from past attempts by atom0s were done on the following systems:
+    
+        Desktops
+            - Various personal builds between 2005-2018.
+    
+        Laptops:
+            - Alienware Sentia m3450 (2005-2006)
+            - Gateway (Unknown Model) (2008ish)
+            - Lenovo Z710 Ideapad (2013-2016)
+            - MSI GE72VR Apache Pro (2017)
+
+----------------------------------------------------------------------------------------------------
+
+    Current Laptop:
+        - MSI GE72VR Apache Pro
+            -> Microsoft Windows 10 Home - 64-Bit - Default (Pre-installed - No Media)
+            -> 7th Generation Intel� Kabylake� i7-7700HQ (2.8GHz - 3.8GHz, 6MB Intel� Smart Cache) Processor
+            -> 16GB (2x8GB) DDR4 2400MHz Dual Channel Memory
+            -> 17.3" FHD 120Hz WideView (16:9) Matte-Type 94% NTSC Screen (1920x1080)
+            -> NVIDIA� GeForce� GTX 1060 (3GB) GDDR5 (Pascal) DX12
+            -> (Boot Drive) 128GB M.2 Solid State Drive
+            -> (Storage Drive) 256GB Samsung 850 Evo Solid State Drive
+            
+    On this machine, by default, Final Fantasy XI will run at only 5-10 FPS. While running, various artifacts
+    can be seen such as invalid rendering of some shadows, effects from shaders, etc. While running under Ashita,
+    other issues arise such as invalid rendering of text objects, missing background primitive objects, etc.
+    
+    No matter what settings, adjustments, or tweaks that are made to the game or the graphics settings in Nvidia's
+    control panel, the game performance is not increased, at all. At this point, the game is unplayable.
+    
+    Using this Direct3D8 to Direct3D9 proxy project, the game now runs at a full 30 (or unlocked to 60) FPS. All
+    problems seen above are fixed and no longer present. This is a [near] 100% performance increase and makes the
+    game playable, in full, on this machine.
+
+----------------------------------------------------------------------------------------------------
+
+    Current Desktop:
+        - Custom Built Desktop System
+            -> Microsoft Windows 8.1 Pro - 64-Bit
+            -> Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz, 4001 Mhz, 4 Core(s), 8 Logical Processor(s)
+            -> 16GB (2x8GB) DDR3 1600MHz Dual Channel Memory
+            -> 2x Asus VH238H Black 23" Full HD HDMI LED Backlight LCD Monitor w/Speakers 250 cd/m2 ASCR 50,000,000:
+            -> NVIDIA� GeForce� GTX 970 (4GB) GDDR5
+            -> (Boot Drive) 256GB Samsung 850 Evo Solid State Drive
+            -> (Storage Drive) 256GB Samsung 850 Evo Solid State Drive
+            -> (Storage Drive) 2TB Toshiba DT01ACA200 7200RPM Drive
+            
+    On this machine, by default, Final Fantasy XI will run perfectly at 30 (or 60) FPS without issue. No issues
+    are seen in-game under default conditions with no modifications. While under Ashita, the game continues to
+    run without problems and no performance loss or impacts. 
+    
+    Using this Direct3D8 to Direct3D9 proxy project, the game will continue to run perfectly at 30 (or 60) FPS.
+    The only visual artifact seen on this machine is that shadows become impossible to keep enabled. They will
+    flicker extremely often and fast causing strain to watch them. This is the only visual issue seen. 
+    
+    The only other issue seen with this machine is sharing screens on Skype seems to cause a drop in frame rate.
+    
+    With and without the proxy, the game is 100% playable on this machine.
+
+----------------------------------------------------------------------------------------------------
+
+..::[ Changes ]::..
+
+v1.1.0.0
+    CHG: Removed the anti-Windower blocks; the library has been deemed stable at this point so there is no need to block it any longer.
+
+    Please note; with this change Windower users can now use this library but will receive no support in the event of isses or crashes.
+    I do not use or touch Windower, so I cannot give support for it.
+
+v1.0.0.0
+v1.0.0.1
+v1.0.0.2
+    FIX: Fixed some memory leak issues causing the game to eventually crash.
+    FIX: Implemented a better ref count system and object manager to prevent duplicate surfaces/textures being created for no reason.
+    ADD: Added check for zbuffer discarding based on present parameters.
+    FIX: Fixed some parameter names to various functions from my proxy generator project.
+    FIX: Fixed and removed some debug code.
+    FIX: Fixed some typo's in the shader creations.
+    CHG: Changed and adjusted the naming of objects to be more consistent.
+    ADD: Added safety macros to cleanup some code and ensure object releasing/deleting was done properly.
+    ADD: Added new configuration manager to parse and make use of the new d3d8.ini file.
+    ADD: Added various new configurations to be used.
+    ADD: Added some rendering-specific changes (Force-flushing / render state overrides.)
+    CHG: Changed and cleaned up various parts of the projects code.
+    CHG: Changed some headers to be more robust and cleaned up their code.
+    CHG: Adjusted the force flush code to cleanup some unneeded every-frame parsing.
+    REM: Removed some old debug code.
+    FIX: Fixed and updated the copyrights across the project source code.
+    ADD: Added create texture overrides to the config file.
+    FIX: Fixed some settings default values in the default d3d8.ini file.
+    FIX: Fixed proxy usage not working properly when set to disabled in the ini file.
+    REM: Removed some debug code and outputs while in release mode.
+    REM: Removed some unneeded render state code.
+    ADD: Added some comments to various code chunks that need some explaining if others join the team and help maintain this project.
+    CHG: Adjusted some variables that could be made into consts.
+    CHG: Adjusted some more releasing/deleting code to make use of the safety macros.
+    FIX: Added new fix and configurations to make shadows and lighting work properly on all machines.
+    CHG: Cleaned up some texture code.
+    CHG: Cleaned up some shader code.
+    CHG: Updated the included read me and d3d8.ini files.
+
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+Fin! ~
