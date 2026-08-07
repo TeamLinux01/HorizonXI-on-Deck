@@ -1,12 +1,22 @@
 # Setting up HorizonXI on Valve's Steam Deck
 
-These instructions and script install version 1.9.2 of the [launcher](https://github.com/HorizonFFXI/HorizonXI-Launcher-Binaries/releases).
+These instructions and script install version 2.0.0 of the [launcher](https://github.com/HorizonFFXI/HorizonXI-Launcher-Binaries/releases).
 
 This script will automatically setup the Windows install path to be `C:\Program Files (x86)` inside the prefix. I will also turn on several add-ons that I use and set the resolution to 720p and rendering resolution to 1440p. I am doing using this resolution instead of 800p so that when I dock to a 16x9 screen, it doesn't stretch. Feel free to change it to 800p/1600p in the launcher.
 
 Also added the D3D8 to D3D9 proxy by atom0s,
 Final Fantasy XI - Direct3D8 to Direct3D9 Proxy
 (c) 2018 Ashita Development Team
+
+## Steam Deck Thread in HorizonXI discord
+
+> [!WARNING]
+> This installation method is not supported in the HorizonXI discord thread titled Steam Deck Thread.
+
+Please follow the guide: https://gitlab.com/MattyGWS/HorizonXI-Linux-Installation/ instead.
+
+> [!INFO]
+> Feel free to open a Github issue for this tool and I will try to help out as soon as I am able.
 
 ## Prerequisites
 
