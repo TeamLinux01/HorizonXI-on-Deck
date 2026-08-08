@@ -25,7 +25,7 @@ Please follow the guide: https://gitlab.com/MattyGWS/HorizonXI-Linux-Installatio
 
 * [Register a HorizonXI account](https://horizonxi.com/register)
 * [Create a character](https://horizonxi.com/account)
-* Install the latest version of GE-Proton or GE-Proton7-42 via [ProtonUp-Qt](https://flathub.org/apps/net.davidotek.pupgui2)
+* Install the proton version **cachyos-10.0-20260425-slr** from *ProtonPlus*
 * Have a USB or Bluetooth keyboard connected to the Steam Deck
 
 ## Setup
