@@ -36,7 +36,7 @@ Please follow the guide: https://gitlab.com/MattyGWS/HorizonXI-Linux-Installatio
    ```
    After this is ran, there will be *Games/HorizonXI* folders in your user home folder.
 
-1. Download proton version **GE-Proton7-42** from *ProtonUp-Qt* or *ProtonPlus*. It may require restarting Steam for the new proton version to be detected by Steam.
+1. Download proton version **cachyos-10.0-20260425-slr** from *ProtonPlus*. It may require restarting Steam for the new proton version to be detected by Steam.
 
 1. Open Steam and click the **Add a Game** button on the bottom-left of Steam's desktop interface. Click **Add a Non-Steam Game...**, click **Browse...* button on the window that popped-up, navigate to *Home/Games/HorizonXI/Launcher/* and click **HorizonXI-Launcher.exe** and then click the **Open** button. Click the blue **Add Selected Programs** button.
 
@@ -48,7 +48,7 @@ Please follow the guide: https://gitlab.com/MattyGWS/HorizonXI-Linux-Installatio
        ```
        to the *LAUNCH OPTIONS*
 
-    1. Click **Compatibility** tab, checkbox **Force the use of a specific Steam Play compatibility tool** and select **GE-Proton7-42**.
+    1. Click **Compatibility** tab, checkbox **Force the use of a specific Steam Play compatibility tool** and select **cachyos-10.0-20260425-slr*.
 
     1. Feel free to rename the game name at this point.
 
