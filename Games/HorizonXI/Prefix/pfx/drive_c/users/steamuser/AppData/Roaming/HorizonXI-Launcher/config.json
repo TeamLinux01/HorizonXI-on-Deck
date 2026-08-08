@@ -217,34 +217,6 @@
 			"author": "atom0s",
 			"enabled": true
 		},
-		"HXUI": {
-			"id": "38",
-			"name": "HXUI",
-			"description": "A massive UI overhaul for almost every UI element on your screen.",
-			"author": "HXUI Team",
-			"enabled": true
-		},
-		"MobDB": {
-			"id": "39",
-			"name": "MobDB",
-			"description": "Displays detailed monster information on-screen.",
-			"author": "Thorny",
-			"enabled": true
-		},
-		"NoLock": {
-			"id": "41",
-			"name": "NoLock",
-			"description": "Allows you to engage/disengage without animation lock from effects such as spells being cast on you or mob TP moves.",
-			"author": "WinterSolstice8",
-			"enabled": true
-		},
-		"TargetLines": {
-			"id": "40",
-			"name": "TargetLines",
-			"description": "FFXII style combat lines for FFXI.",
-			"author": "Jyouya",
-			"enabled": true
-		},
 		"Balloon": {
 			"id": "42",
 			"name": "Balloon",
@@ -257,14 +229,14 @@
 			"name": "Chains",
 			"description": "Display current skillchain options.",
 			"author": "Sippius, Ivaar, and NerfOnline",
-			"enabled": true
+			"enabled": false
 		},
 		"CleanCS": {
 			"id": "44",
 			"name": "CleanCS",
 			"description": "Hides addon elements during cutscenes.",
 			"author": "atom0s",
-			"enabled": true
+			"enabled": false
 		},
 		"ImGuiStyle": {
 			"id": "49",
@@ -299,7 +271,35 @@
 			"name": "ZoneName",
 			"description": "Displays the zone and region name for a short time while changing zones.",
 			"author": "Xenonsmurf and onimitch",
+			"enabled": false
+		},
+		"HXUI": {
+			"id": "38",
+			"name": "HXUI",
+			"description": "A massive UI overhaul for almost every UI element on your screen.",
+			"author": "HXUI Team",
 			"enabled": true
+		},
+		"MobDB": {
+			"id": "39",
+			"name": "MobDB",
+			"description": "Displays detailed monster information on-screen.",
+			"author": "Thorny",
+			"enabled": false
+		},
+		"NoLock": {
+			"id": "41",
+			"name": "NoLock",
+			"description": "Allows you to engage/disengage without animation lock from effects such as spells being cast on you or mob TP moves.",
+			"author": "WinterSolstice8",
+			"enabled": false
+		},
+		"TargetLines": {
+			"id": "40",
+			"name": "TargetLines",
+			"description": "FFXII style combat lines for FFXI.",
+			"author": "Jyouya",
+			"enabled": false
 		}
 	},
 	"plugins": {
@@ -567,7 +567,9 @@
 		"0042": {
 			"name": "Default Game Screenshot Path",
 			"key": "0042",
-			"value": "C:\\Program Files (x86)\\SquareEnix\\FINAL FANTASY XI"
+			"value": [
+				"C:\\users\\steamuser\\Documents\\Pictures"
+			]
 		},
 		"0043": {
 			"name": "Take Screenshot In Screen Resolution",
@@ -681,13 +683,6 @@
 			"description": "FFXI UI & Icon Changes. Modified by HorizonXI.",
 			"author": "KenshiDRK",
 			"enabled": true
-		},
-		"horizonoverrides": {
-			"dirname": "horizonoverrides",
-			"name": "Horizon Overrides",
-			"enabled": true,
-			"description": "Ensures that custom textures such as Ducal Aketon display properly, even with texture packs installed.",
-			"author": "HorizonXI"
 		}
 	},
 	"theme": "dark"

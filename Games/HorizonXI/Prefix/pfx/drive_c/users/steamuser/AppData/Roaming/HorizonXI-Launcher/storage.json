@@ -1,14 +1,14 @@
 {
-    "paths": {
-        "installPath": {
-            "name": "installPath",
-            "description": "Location of HorizonXI Game install.",
-            "path": "C:\\Program Files (x86)\\HorizonXI\\Game"
-        },
-        "downloadPath": {
-            "name": "downloadPath",
-            "description": "Location of HorizonXI zip download.",
-            "path": "C:\\Program Files (x86)\\HorizonXI\\Downloads"
-        }
-    }
+	"paths": {
+		"installPath": {
+			"name": "installPath",
+			"description": "Location of HorizonXI Game install.",
+			"path": "C:\\HorizonXI\\Game"
+		},
+		"downloadPath": {
+			"name": "downloadPath",
+			"description": "Location of HorizonXI zip download.",
+			"path": "C:\\HorizonXI\\Downloads"
+		}
+	}
 }

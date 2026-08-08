@@ -46,9 +46,9 @@ if [ -d "$HOME/Games/HorizonXI/Prefix/pfx" ]; then
   echo -e "${GREEN}Prefix already exists. Skipping.${REMOVE}"
 else
   echo -e "${GREEN}Premaking the program files folder in the WINE Prefix.${REMOVE}"
-  mkdir -p "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI"
+  mkdir -p "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI"
   echo -e "${GREEN}Link the donwloads folder to a location outside the prefix.${REMOVE}"
-  ln -s "$HOME/Games/HorizonXI/Downloads" "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Downloads"
+  ln -s "$HOME/Games/HorizonXI/Downloads" "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Downloads"
   echo -e "${GREEN}Premaking the HorizonXI-Launcher folder in the WINE Prefix.${REMOVE}"
   mkdir -p "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/users/steamuser/AppData/Roaming/HorizonXI-Launcher"
 fi
@@ -71,25 +71,25 @@ fi
 
 popd >/dev/null || exit 1
 
-if [ ! -d "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader" ]; then
+if [ ! -d "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Game/bootloader" ]; then
   echo -e "${GREEN}Premaking the bootloader folder in the WINE Prefix.${REMOVE}"
-  mkdir -p "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader"
+  mkdir -p "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Game/bootloader"
 fi
 
-pushd "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader" >/dev/null || exit 1
+pushd "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Game/bootloader" >/dev/null || exit 1
 
-if [ -f "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader/d3d8.ini" ]; then
+if [ -f "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Game/bootloader/d3d8.ini" ]; then
   echo -e "${GREEN}d3d8.ini already exsists. Skipping.${REMOVE}"
 else
   echo -e "${GREEN}Downloading the d3d8.ini file.${REMOVE}"
-  wget "https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/Program%20Files%20(x86)/HorizonXI/Game/bootloader/d3d8.ini"
+  wget "https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Game/bootloader/d3d8.ini"
 fi
 
-if [ -f "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/bootloader/d3d8.dll" ]; then
+if [ -f "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Game/bootloader/d3d8.dll" ]; then
   echo -e "${GREEN}d3d8.dll already exists. Skipping.${REMOVE}"
 else
   echo -e "${GREEN}Downloading the d3d8.dll file.${REMOVE}"
-  wget "https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/Program%20Files%20(x86)/HorizonXI/Game/bootloader/d3d8.dll"
+  wget "https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Game/bootloader/d3d8.dll"
 fi
 
 popd >/dev/null || exit 1
