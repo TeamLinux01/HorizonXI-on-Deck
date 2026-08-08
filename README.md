@@ -48,7 +48,7 @@ Please follow the guide: https://gitlab.com/MattyGWS/HorizonXI-Linux-Installatio
        ```
        to the *LAUNCH OPTIONS*
 
-    1. Click **Compatibility** tab, checkbox **Force the use of a specific Steam Play compatibility tool** and select **cachyos-10.0-20260425-slr*.
+    1. Click **Compatibility** tab, checkbox **Force the use of a specific Steam Play compatibility tool** and select **cachyos-10.0-20260425-slr**.
 
     1. Feel free to rename the game name at this point.
 
