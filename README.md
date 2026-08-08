@@ -2,7 +2,10 @@
 
 These instructions and script install version 2.0.1 of the [launcher](https://github.com/HorizonFFXI/HorizonXI-Launcher-Binaries/releases).
 
-This script will automatically setup the Windows install path to be `C:\Program Files (x86)` inside the prefix. I will also turn on several add-ons that I use and set the resolution to 720p and rendering resolution to 1440p. I am doing using this resolution instead of 800p so that when I dock to a 16x9 screen, it doesn't stretch. Feel free to change it to 800p/1600p in the launcher.
+> [!WARNING]
+> The script has been changed to install HorizonXI into the root of C:\. This is a breaking change from the way the script was working previously, as it was installing to C:\ProgramFiles (x86)\HorizonXI. The change is to remove the warning about the location of the install having issues accessing the files.
+
+This script will automatically setup the Windows install path to be `C:\HorizonXI` inside the prefix. I will also turn on several add-ons that I use and set the resolution to 720p and rendering resolution to 1440p. I am doing using this resolution instead of 800p so that when I dock to a 16x9 screen, it doesn't stretch. Feel free to change it to 800p/1600p in the launcher.
 
 Also added the D3D8 to D3D9 proxy by atom0s,
 Final Fantasy XI - Direct3D8 to Direct3D9 Proxy
@@ -81,13 +84,13 @@ HorizonXI
 
 Add three paths:
 ```
-<home>/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/config
+<home>/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Game/config
 ```
 ```
-<home>/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/scripts
+<home>/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Game/scripts
 ```
 ```
-<home>/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/SquareEnix/FINAL FANTASY XI/USER
+<home>/Games/HorizonXI/Prefix/pfx/drive_c/HorizonXI/Game/SquareEnix/FINAL FANTASY XI/USER
 ```
 
 Now HorizonXI will will show up as a game to backup and restore.
