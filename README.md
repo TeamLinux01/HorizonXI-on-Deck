@@ -91,3 +91,20 @@ Add three paths:
 ```
 
 Now HorizonXI will will show up as a game to backup and restore.
+
+## MD5 sums of the Download files
+
+In case someone needs to check if their downloaded files in the $HOME/Games/HorizonXI/Downloads are corrupted
+
+* 6a812bfaf94ea07afac6b6ce9cb82b54  HorizonXI.zip
+* 1a90c20da02a766c9484642b0a03b4ef  HorizonXI-1_1_3.zip
+* 11145d3512290dc098d4ad07b2df37a0  HorizonXI-1.2.0.zip
+* 718958dd8030247ea11d00d226f64270  HorizonXI-1_2_1.zip
+* 604aa9344da85960708137fefc3705b4  HorizonXI-1_2_2.zip
+* 853b9d3ae6a78ed42c23bf406c76a19e  HorizonXI-1_2_3.zip
+* ec5876188fd79fd2c5449e49be5da8eb  HorizonXI-1_2_4.zip
+* fc4c5da2a1d8415300ad176a9c79354e  HorizonXI-1_2_5.zip
+* 9be7fced6c20f07716edf18f6af5b133  HorizonXI-1_2_6.zip
+* 8c23de83a5044b18e9761c6f9fe5cc4e  HorizonXI-2_0_1.zip
+* 190b84b5465b4e81dd2488ebbff75c7e  HorizonXI-2_0_2.zip
+* 95d225cfed9f22107a784c6ea0d50cf8  prereqs.zip
