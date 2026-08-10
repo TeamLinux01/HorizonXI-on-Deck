@@ -97,9 +97,38 @@ Now HorizonXI will will show up as a game to backup and restore.
 
 ## MD5 sums of the Download files
 
+> [!WARNING]
+> If you have issues with Ashita not logging you in, you are probably using the HorizonXI.zip that has the md5sum of 6a812bfaf94ea07afac6b6ce9cb82b54 or different HorizonXI.zip than the latest, which has an older version of the Ashita-cli.exe.
+> Delete the files in your $HOME/Games/Horizon/Downloads, delete the $HOME/Games/HorizonXI/Prefix folder and run the script again. It should recreate everything.
+
+It seems the launcher downloads a different HorizonXI.zip, which may report "HorizonXI.zip contained no game files. Re-download to continue."
+Close the launcher, etractact the contents of the zip to the Game folder and change the following file to look like this, which should allow the launcher to update:
+
+> [!NOTE]
+> The line that should be changed is "extracted": false
+
+`$HOME/Games/HorizonXI/Prefix/pfx/drive_c/users/steamuser/AppData/Roaming/HorizonXI-Launcher/storage.json`
+```
+...
+	"GAME_UPDATER": {
+		"currentVersion": 20,
+		"currentMarketingVersion": "2.0.2",
+		"latestVersion": 20,
+		"baseGame": {
+			"downloaded": true,
+			"extracted": true
+		},
+...
+```
+
+Hopefully this gets fixed, otherwise a script might need to be made to automatically extract the contents.
+If it gets fixed via a change to the HorizonXI.zip, I will update the MD5 checksum that I have recorded.
+
 In case someone needs to check if their downloaded files in the $HOME/Games/HorizonXI/Downloads are corrupted
 
-* 6a812bfaf94ea07afac6b6ce9cb82b54  HorizonXI.zip
+* 85327f6f67099ddce981492d6bffb080  HorizonXI-1_1.zip
+* 07b7b2742066e1d55716a3f086bbdfad  HorizonXI-1_1_1.zip
+* cf22686104233254054024df8d6743e7  HorizonXI-1_1_2.zip
 * 1a90c20da02a766c9484642b0a03b4ef  HorizonXI-1_1_3.zip
 * 11145d3512290dc098d4ad07b2df37a0  HorizonXI-1.2.0.zip
 * 718958dd8030247ea11d00d226f64270  HorizonXI-1_2_1.zip
@@ -108,6 +137,16 @@ In case someone needs to check if their downloaded files in the $HOME/Games/Hori
 * ec5876188fd79fd2c5449e49be5da8eb  HorizonXI-1_2_4.zip
 * fc4c5da2a1d8415300ad176a9c79354e  HorizonXI-1_2_5.zip
 * 9be7fced6c20f07716edf18f6af5b133  HorizonXI-1_2_6.zip
+* 78c7e129796d76cbb07db7c4374a9dac  HorizonXI-1_2_7.zip
+* 25a3abe65e77b8547ed04c54d40daf13  HorizonXI-1_2_8.zip
+* b2ac5ce4d66ba97d5d8ba4b62731c968  HorizonXI-1_9_0.zip
+* 3c4f987d8efa81c0f1e9aec69c4c540d  HorizonXI-1_9_1.zip
+* dd354e6f6e659bb2e2638169329c43db  HorizonXI-1_9_2.zip
+* 88cdf0095a82d4c57553117182cf60d0  HorizonXI-2_0_0.zip
 * 8c23de83a5044b18e9761c6f9fe5cc4e  HorizonXI-2_0_1.zip
 * 190b84b5465b4e81dd2488ebbff75c7e  HorizonXI-2_0_2.zip
 * 95d225cfed9f22107a784c6ea0d50cf8  prereqs.zip
+
+> [!NOTE]
+> There is now a user script in Windows for cleaning a HorizonXI install, so sometimes things just need to be removed and started over. DO NOT USE THIS ON LINUX! Just delete the Prefix folder and the Downloads files.
+> https://github.com/clanofartisans/clean-uninstall-horizonxi/releases for Windows users.
