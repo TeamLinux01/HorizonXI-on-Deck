@@ -1,5 +1,5 @@
 #!/bin/bash
-version=2.0.1
+version=2.0.3
 GREEN='\033[0;32m'
 RED='\033[0;31m'
 REMOVE='\033[0m'

@@ -1,6 +1,6 @@
 # Setting up HorizonXI on Valve's Steam Deck
 
-These instructions and script install version 2.0.1 of the [launcher](https://github.com/HorizonFFXI/HorizonXI-Launcher-Binaries/releases).
+These instructions and script install version 2.0.3 of the [launcher](https://github.com/HorizonFFXI/HorizonXI-Launcher-Binaries/releases).
 
 > [!WARNING]
 > The script has been changed to install HorizonXI into the root of C:\. This is a breaking change from the way the script was working previously, as it was installing to C:\ProgramFiles (x86)\HorizonXI. The change is to remove the warning about the location of the install having issues accessing the files.
