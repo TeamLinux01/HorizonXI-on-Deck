@@ -25,7 +25,7 @@ Please follow the guide: https://gitlab.com/MattyGWS/HorizonXI-Linux-Installatio
 
 * [Register a HorizonXI account](https://horizonxi.com/register)
 * [Create a character](https://horizonxi.com/account)
-* Install the proton version **cachyos-10.0-20260425-slr** from *ProtonPlus*
+* Install the proton version **[cachyos-10.0-20260425-slr](https://github.com/CachyOS/proton-cachyos/releases?page=2#release-cachyos-10.0-20260425-slr)** from *ProtonPlus*
 * Have a USB or Bluetooth keyboard connected to the Steam Deck
 
 ## Setup
@@ -36,7 +36,7 @@ Please follow the guide: https://gitlab.com/MattyGWS/HorizonXI-Linux-Installatio
    ```
    After this is ran, there will be *Games/HorizonXI* folders in your user home folder.
 
-1. Download proton version **cachyos-10.0-20260425-slr** from *ProtonPlus*. It may require restarting Steam for the new proton version to be detected by Steam.
+1. Download proton version **[cachyos-10.0-20260425-slr](https://github.com/CachyOS/proton-cachyos/releases?page=2#release-cachyos-10.0-20260425-slr)** from *ProtonPlus* and extract it to ~/.steam/root/compatibilitytools.d . It may require restarting Steam for the new proton version to be detected by Steam.
 
 1. Open Steam and click the **Add a Game** button on the bottom-left of Steam's desktop interface. Click **Add a Non-Steam Game...**, click **Browse...* button on the window that popped-up, navigate to *Home/Games/HorizonXI/Launcher/* and click **HorizonXI-Launcher.exe** and then click the **Open** button. Click the blue **Add Selected Programs** button.
 
@@ -54,7 +54,7 @@ Please follow the guide: https://gitlab.com/MattyGWS/HorizonXI-Linux-Installatio
 
 1. Click **Play**, the launcher should now come up.
 
-    1. Click **Install Game** button in the launcher. After it done installing, it will most likely come up with an **Update Game** button, so click that button when it comes up.
+    1. Click **Install Game** button in the launcher. (Mouse may not work, use touchscreen.) After it done installing, it will most likely come up with an **Update Game** button, so click that button when it comes up.
 
     1. Fill in the Username, Password and click the **Login** button.
 
